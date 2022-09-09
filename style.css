@@ -1,0 +1,136 @@
+:root
+{
+    --color-Dark-cyan: hsl(158, 36%, 37%);
+    --color-Cream: hsl(30, 38%, 92%);
+
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    background: var(--color-Cream);
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.parfum_desktop
+{
+    height: 400px;
+    width: 270px;
+    border-radius: 13px 0 0 13px;
+}
+
+.section_description
+{
+    background: var(--White);
+    height: 400px;
+    width: 270px;
+    border-radius: 0 13px 13px 0;
+
+    position: relative;
+}
+
+.description
+{
+    
+}
+
+.description p
+{
+    font-family: "Montserrat";
+    font-weight: normal;
+    font-size: 11px;
+    color: var(--Dark-grayish-blue);
+    margin: 25px 0 0 30px;
+}
+
+.description h1
+{
+    font-size: 27px;
+    width: 200px;
+    font-family: "Fraunces";
+    margin: 10px 0 0 30px;
+    line-height: 30px;
+}
+
+.description h2
+{
+    color: hsla(228, 12%, 48%, 0.7);
+    font-size: 13px;
+    font-weight: normal;
+    font-family: "Montserrat";
+    margin: 20px 0 0 28px;
+    width: 220px;
+    line-height: 21px;
+}
+
+#price
+{
+    display: inline-block;
+    font-size: 30px;
+    font-family: "Fraunces";
+    color: var(--color-Dark-cyan);
+}
+
+#old_price
+{
+    position: absolute;
+    right: 65px;
+    bottom: 108px;
+    text-decoration: line-through;
+}
+
+button
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--color-Dark-cyan);
+    color: var(--White);
+    font-family: "Montserrat";
+    border-radius: 8px;
+    box-shadow: none;
+
+    width: 220px;
+    height: 52px;
+    bottom: 0;
+    margin: 0 25px 27px 25px;
+    position: absolute;
+}
+
+.svg_image
+{
+    margin-right: 10px;
+}
+
+
+@media all and (max-width: 540px)
+{
+    .parfum_desktop
+    {
+        content: url("images/image-product-mobile.jpg");
+        height: 210px;
+        border-radius: 13px 13px 0 0;
+    }
+
+    .section_description
+    {
+        border-radius: 0 0 13px 13px;
+    }
+}
