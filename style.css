@@ -45,18 +45,15 @@ body
     position: relative;
 }
 
-.description
-{
-    
-}
-
-.description p
+.description p:nth-child(1)
 {
     font-family: "Montserrat";
     font-weight: normal;
     font-size: 11px;
     color: var(--Dark-grayish-blue);
     margin: 25px 0 0 30px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
 }
 
 .description h1
@@ -85,14 +82,18 @@ body
     font-size: 30px;
     font-family: "Fraunces";
     color: var(--color-Dark-cyan);
+    position: absolute;
+    left: 25px;
+    bottom: 105px;
 }
 
 #old_price
 {
     position: absolute;
-    right: 65px;
-    bottom: 108px;
+    right: 60px;
+    bottom: 115px;
     text-decoration: line-through;
+    color: rgba(0,0,0,0.4);
 }
 
 button
